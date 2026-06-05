@@ -4,7 +4,7 @@ import type { Review } from '@/lib/site-data'
 export function ReviewCard({ review }: { review: Review }) {
   return (
     <figure className="flex h-full flex-col rounded-2xl border border-border bg-card p-6 shadow-soft transition-shadow hover:shadow-card">
-      <div className="flex items-center gap-0.5 text-clay" aria-label="5 out of 5 stars">
+      <div className="flex items-center gap-0.5 text-primary" aria-label="5 out of 5 stars">
         {Array.from({ length: 5 }).map((_, i) => (
           <Star key={i} className="size-4 fill-current" />
         ))}

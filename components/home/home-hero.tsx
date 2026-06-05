@@ -32,7 +32,7 @@ export function HomeHero() {
             <span className="relative whitespace-nowrap text-primary">
               Colorado homes
               <span
-                className="absolute -bottom-1 left-0 h-2 w-full rounded-full bg-accent/80"
+                className="absolute -bottom-1 left-0 h-2 w-full rounded-full bg-primary/30"
                 aria-hidden="true"
               />
             </span>
@@ -82,7 +82,7 @@ export function HomeHero() {
             aria-hidden="true"
           />
           <div className="absolute -bottom-5 left-4 flex items-center gap-3 rounded-2xl border border-border bg-card/95 px-4 py-3 shadow-card backdrop-blur sm:left-6">
-            <div className="flex items-center gap-0.5 text-clay" aria-hidden="true">
+            <div className="flex items-center gap-0.5 text-primary" aria-hidden="true">
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} className="size-4 fill-current" />
               ))}
