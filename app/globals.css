@@ -44,6 +44,12 @@
   --color-clay-foreground: var(--clay-foreground);
   --color-sage: var(--sage);
   --color-sage-foreground: var(--sage-foreground);
+  --color-ink: var(--ink);
+  --color-ink-foreground: var(--ink-foreground);
+  --color-ink-muted: var(--ink-muted);
+  --shadow-soft: 0 1px 2px -1px oklch(0.21 0.018 235 / 0.08), 0 4px 12px -4px oklch(0.21 0.018 235 / 0.08);
+  --shadow-card: 0 1px 3px oklch(0.21 0.018 235 / 0.06), 0 12px 28px -12px oklch(0.21 0.018 235 / 0.14);
+  --shadow-lift: 0 2px 6px oklch(0.21 0.018 235 / 0.08), 0 24px 48px -16px oklch(0.21 0.018 235 / 0.22);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.85);
   --radius-lg: var(--radius);
@@ -81,12 +87,16 @@
   --clay-foreground: oklch(0.99 0.01 60);
   --sage: oklch(0.95 0.03 195);
   --sage-foreground: oklch(0.36 0.06 200);
+  /* Deep teal "ink" for premium high-contrast sections */
+  --ink: oklch(0.28 0.045 215);
+  --ink-foreground: oklch(0.97 0.01 200);
+  --ink-muted: oklch(0.74 0.03 200);
   --chart-1: oklch(0.56 0.095 197);
   --chart-2: oklch(0.7 0.155 33);
   --chart-3: oklch(0.66 0.1 200);
   --chart-4: oklch(0.78 0.08 180);
   --chart-5: oklch(0.48 0.015 220);
-  --radius: 0.5rem;
+  --radius: 0.75rem;
   --sidebar: oklch(0.991 0.003 210);
   --sidebar-foreground: oklch(0.21 0.018 225);
   --sidebar-primary: oklch(0.56 0.095 197);
@@ -120,6 +130,9 @@
   --clay-foreground: oklch(0.18 0.03 40);
   --sage: oklch(0.32 0.03 200);
   --sage-foreground: oklch(0.95 0.008 200);
+  --ink: oklch(0.24 0.04 218);
+  --ink-foreground: oklch(0.97 0.01 200);
+  --ink-muted: oklch(0.74 0.03 200);
   --chart-1: oklch(0.72 0.1 196);
   --chart-2: oklch(0.74 0.15 36);
   --chart-3: oklch(0.66 0.1 200);
@@ -146,10 +159,22 @@
     @apply font-sans;
   }
   h1, h2, h3, h4, h5 {
-    @apply font-serif tracking-tight;
+    @apply font-serif font-semibold tracking-[-0.02em];
+  }
+  h1 {
+    @apply tracking-[-0.03em];
   }
   /* Reusable uppercase eyebrow / label */
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-primary;
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-primary;
+  }
+  .eyebrow-ondark {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-foreground/70;
+  }
+  /* Subtle premium grid texture for dark sections */
+  .ink-grid {
+    background-image:
+      radial-gradient(circle at 1px 1px, oklch(1 0 0 / 0.05) 1px, transparent 0);
+    background-size: 28px 28px;
   }
 }

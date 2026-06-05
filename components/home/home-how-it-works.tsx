@@ -26,21 +26,22 @@ export function HomeHowItWorks() {
     <section className="border-y border-border bg-muted/40">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-wide text-primary">
+          <p className="eyebrow">
+            <span className="h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
             How it works
           </p>
-          <h2 className="mt-3 font-serif text-3xl font-semibold text-balance text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-serif text-3xl font-semibold text-balance text-foreground sm:text-4xl lg:text-5xl">
             Simple, personal, and clear from the first call
           </h2>
         </div>
 
-        <ol className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((s) => (
             <li
               key={s.n}
-              className="rounded-2xl border border-border bg-card p-6"
+              className="relative rounded-2xl border border-border bg-card p-6 shadow-soft transition-all duration-200 hover:-translate-y-1 hover:shadow-card"
             >
-              <span className="font-serif text-3xl font-semibold text-clay">
+              <span className="font-serif text-4xl font-semibold text-clay">
                 {s.n}
               </span>
               <h3 className="mt-3 font-serif text-lg font-semibold text-foreground">

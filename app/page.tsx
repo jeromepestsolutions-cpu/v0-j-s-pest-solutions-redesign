@@ -22,23 +22,24 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-wide text-primary">
+              <p className="eyebrow">
+                <span className="h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
                 Common services
               </p>
-              <h2 className="mt-3 font-serif text-3xl font-semibold text-balance text-foreground sm:text-4xl">
+              <h2 className="mt-4 font-serif text-3xl font-semibold text-balance text-foreground sm:text-4xl lg:text-5xl">
                 Practical help for the pests we see most
               </h2>
             </div>
             <Link
               href="/services"
-              className="group inline-flex items-center gap-1.5 text-sm font-medium text-primary"
+              className="group inline-flex items-center gap-1.5 text-sm font-semibold text-primary"
             >
               View all services
-              <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+              <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
 
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((s) => (
               <ServiceCard
                 key={s.slug}
@@ -62,10 +63,10 @@ export default function HomePage() {
 
       {/* Pricing guidance */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-        <div className="overflow-hidden rounded-3xl border border-border bg-card">
+        <div className="overflow-hidden rounded-[1.75rem] border border-border bg-card shadow-card">
           <div className="grid items-center gap-8 p-8 sm:p-12 lg:grid-cols-2">
             <div>
-              <span className="flex size-12 items-center justify-center rounded-xl bg-clay/15 text-clay">
+              <span className="flex size-12 items-center justify-center rounded-xl bg-clay/15 text-clay ring-1 ring-clay/20">
                 <Calculator className="size-6" />
               </span>
               <h2 className="mt-5 font-serif text-3xl font-semibold text-balance text-foreground sm:text-4xl">
@@ -82,7 +83,7 @@ export default function HomePage() {
                 </ActionLink>
               </div>
             </div>
-            <ul className="grid gap-3 rounded-2xl bg-secondary/40 p-6 text-sm">
+            <ul className="grid gap-3 rounded-2xl border border-border bg-secondary/40 p-6 text-sm">
               {[
                 'Pest type and how much activity you are seeing',
                 'Property type and approximate size',
@@ -104,13 +105,14 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-wide text-primary">
+              <p className="eyebrow">
+                <span className="h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
                 Service area
               </p>
-              <h2 className="mt-3 font-serif text-3xl font-semibold text-balance text-foreground sm:text-4xl">
+              <h2 className="mt-4 font-serif text-3xl font-semibold text-balance text-foreground sm:text-4xl lg:text-5xl">
                 Local to Arvada, Denver, and the surrounding metro
               </h2>
-              <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+              <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
                 We serve homes and businesses across the west and north Denver
                 metro. If you are nearby, there is a good chance we already work
                 in your neighborhood.
@@ -118,10 +120,10 @@ export default function HomePage() {
               <div className="mt-7">
                 <Link
                   href="/service-areas"
-                  className="group inline-flex items-center gap-1.5 text-sm font-medium text-primary"
+                  className="group inline-flex items-center gap-1.5 text-sm font-semibold text-primary"
                 >
                   See all service areas
-                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
             </div>
@@ -133,14 +135,15 @@ export default function HomePage() {
       {/* Reviews */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-wide text-primary">
+          <p className="eyebrow">
+            <span className="h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
             What neighbors say
           </p>
-          <h2 className="mt-3 font-serif text-3xl font-semibold text-balance text-foreground sm:text-4xl">
+          <h2 className="mt-4 font-serif text-3xl font-semibold text-balance text-foreground sm:text-4xl lg:text-5xl">
             Trusted by homeowners and businesses across the metro
           </h2>
         </div>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {reviews.slice(0, 3).map((r) => (
             <ReviewCard key={r.initials + r.location} review={r} />
           ))}
@@ -148,10 +151,10 @@ export default function HomePage() {
         <div className="mt-8">
           <Link
             href="/reviews"
-            className="group inline-flex items-center gap-1.5 text-sm font-medium text-primary"
+            className="group inline-flex items-center gap-1.5 text-sm font-semibold text-primary"
           >
             Read more reviews
-            <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+            <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
       </section>

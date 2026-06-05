@@ -4,7 +4,7 @@ import type { PestLibraryEntry } from '@/lib/site-data'
 
 export function PestLibraryCard({ entry }: { entry: PestLibraryEntry }) {
   return (
-    <article className="flex h-full flex-col rounded-2xl border border-border bg-card p-6">
+    <article className="flex h-full flex-col rounded-2xl border border-border bg-card p-6 shadow-soft transition-shadow hover:shadow-card">
       <h3 className="font-serif text-xl font-semibold text-foreground">
         {entry.name}
       </h3>
