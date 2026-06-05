@@ -287,6 +287,92 @@ export type Review = {
   text: string
 }
 
+export type AreaDetail = {
+  slug: string
+  name: string
+  intro: string
+  neighborhoods: string[]
+  commonPests: { name: string; note: string }[]
+  localNotes: string[]
+}
+
+export const areaDetails: AreaDetail[] = [
+  {
+    slug: 'arvada',
+    name: 'Arvada',
+    intro:
+      'We are based right here and Arvada is home turf. From the older established neighborhoods near Olde Town to newer developments out west, we know the pest pressure that comes with this area and the seasons.',
+    neighborhoods: [
+      'Olde Town Arvada',
+      'Arvada West',
+      'Lake Arbor',
+      'Candelas',
+      'Leyden Rock',
+      'Ralston Valley',
+    ],
+    commonPests: [
+      {
+        name: 'Mice & voles',
+        note: 'Common in fall as temperatures drop and rodents look for warmth near foundations and garages.',
+      },
+      {
+        name: 'Ants',
+        note: 'Field and pavement ants are frequent around patios, driveways, and kitchen entry points.',
+      },
+      {
+        name: 'Wasps & yellow jackets',
+        note: 'Nesting under eaves and in the ground near decks and play areas through summer.',
+      },
+      {
+        name: 'Spiders',
+        note: 'Basements, garages, and window wells see steady spider activity year-round.',
+      },
+    ],
+    localNotes: [
+      'Homes backing to open space and greenbelts tend to see more rodent and insect pressure from the field edge.',
+      'Older neighborhoods often have more entry points worth sealing during rodent season.',
+      'We group Arvada appointments together to keep service quick and responsive for our neighbors.',
+    ],
+  },
+  {
+    slug: 'denver',
+    name: 'Denver',
+    intro:
+      'We provide residential and commercial pest control across Denver neighborhoods and the surrounding metro. Dense, mixed housing and varied building ages mean pest issues here look a little different block to block.',
+    neighborhoods: [
+      'Highlands',
+      'Berkeley',
+      'Sloan\u2019s Lake',
+      'Washington Park',
+      'Stapleton / Central Park',
+      'Sunnyside',
+    ],
+    commonPests: [
+      {
+        name: 'Roaches',
+        note: 'More common in multi-unit and older buildings where warmth and moisture collect.',
+      },
+      {
+        name: 'Rodents',
+        note: 'Mice and rats find their way in through shared walls, alleys, and utility lines.',
+      },
+      {
+        name: 'Ants',
+        note: 'Persistent kitchen and exterior trails, especially in warmer months.',
+      },
+      {
+        name: 'Spiders',
+        note: 'Common in basements, garages, and around exterior lighting.',
+      },
+    ],
+    localNotes: [
+      'Shared walls in townhomes and condos can let pests move between units, so exterior and entry-point work matters.',
+      'Commercial spaces often need flexible scheduling, which we are happy to work around.',
+      'Older Denver homes can have more gaps and access points to address during rodent season.',
+    ],
+  },
+]
+
 export const reviews: Review[] = [
   {
     initials: 'M.R.',
