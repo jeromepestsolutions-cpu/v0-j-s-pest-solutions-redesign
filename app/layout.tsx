@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
-import { Inter, Fraunces } from 'next/font/google'
+import { Inter, Inter_Tight } from 'next/font/google'
 import './globals.css'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
@@ -11,10 +11,10 @@ const inter = Inter({
   subsets: ['latin'],
 })
 
-const fraunces = Fraunces({
-  variable: '--font-fraunces',
+const interTight = Inter_Tight({
+  variable: '--font-inter-tight',
   subsets: ['latin'],
-  axes: ['opsz'],
+  weight: ['500', '600', '700'],
 })
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${fraunces.variable} bg-background`}
+      className={`${inter.variable} ${interTight.variable} bg-background`}
     >
       <body className="font-sans antialiased">
         <SiteHeader />
