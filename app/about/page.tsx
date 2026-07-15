@@ -68,7 +68,7 @@ export default function AboutPage() {
           </div>
           <div>
             <h2 className="font-serif text-3xl font-semibold text-foreground text-balance">
-              Run by Jerome and Elizabeth
+              Run by Jerome&apos;s family
             </h2>
             <div className="mt-5 space-y-4 leading-relaxed text-muted-foreground">
               <p>
