@@ -31,10 +31,9 @@ export function HomeFamily() {
             A name, a face, and a family you can actually reach
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
-            Jerome brings years of hands-on pest-control experience to Colorado
-            homes and businesses. Elizabeth helps make sure the details are
-            right before your appointment is confirmed, so nothing slips through
-            the cracks.
+            Jerome handles the work in the field with 20+ years of hands-on
+            experience while teaching his boys, Jerome Jr and Tre. Elizabeth and
+            Crystalle keep scheduling and communication clear and personal.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Together they run J&apos;s Pest Solutions the way they would want to

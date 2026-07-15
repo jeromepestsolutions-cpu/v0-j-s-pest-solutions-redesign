@@ -75,8 +75,9 @@ export default function AboutPage() {
                 We started J&apos;s Pest Solutions because we believed pest
                 control could feel different — less like a hard sell and more
                 like a neighbor lending a hand. Jerome handles the work in the
-                field with 20+ years of hands-on experience, and Elizabeth keeps
-                scheduling and communication clear and personal.
+                field with 20+ years of hands-on experience while teaching his
+                boys, Jerome Jr and Tre. Elizabeth and Crystalle keep scheduling
+                and communication clear and personal.
               </p>
               <p>
                 We are not a giant franchise. That means when you have a
