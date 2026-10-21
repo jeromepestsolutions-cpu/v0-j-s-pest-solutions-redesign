@@ -15,14 +15,14 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md supports-[backdrop-filter]:bg-background/75">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center" aria-label={`${business.name} home`}>
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+        <Link href="/" className="flex items-center gap-2" aria-label={`${business.name} home`}>
           <Image
-            src="/images/js-pest-solutions-logo.jpg"
+            src="/images/js-pest-solutions-logo.png"
             alt={`${business.name} logo`}
-            width={260}
-            height={146}
-            className="h-14 w-auto"
+            width={324}
+            height={400}
+            className="h-[72px] w-auto"
             priority
           />
           <span className="ml-1 hidden text-[10px] font-semibold uppercase tracking-[0.14em] text-muted-foreground sm:block">
