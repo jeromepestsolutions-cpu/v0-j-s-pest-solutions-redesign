@@ -79,7 +79,7 @@ export const services: Service[] = [
     slug: 'rodent-control',
     title: 'Rodent Control',
     short:
-      'Mice and rats look for warmth and food, especially as Colorado temperatures drop. We help find how they are getting in.',
+      'Rats and mice look for warmth and food, especially as Colorado temperatures drop. We help find how they are getting in.',
     icon: 'mouse',
     signs: [
       'Droppings in cabinets, the garage, or along walls',
