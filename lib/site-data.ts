@@ -164,7 +164,7 @@ export const services: Service[] = [
     slug: 'wasps-stinging-insects',
     title: 'Wasps & Stinging Insects',
     short:
-      'Wasps, hornets, and yellow jackets near doorways and rooflines are worth handling carefully. We help you stay safe.',
+      'Wasps, Hornets, and Yellow Jackets near doorways and rooflines are worth handling carefully. We help you stay safe.',
     icon: 'triangle-alert',
     signs: [
       'Nests under eaves, rooflines, or in the ground',
