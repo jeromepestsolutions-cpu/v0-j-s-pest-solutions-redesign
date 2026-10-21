@@ -38,9 +38,9 @@ export function HomeHero() {
             </span>
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-pretty text-muted-foreground">
-            {business.name} helps homeowners and businesses in Arvada, Denver,
-            and the greater metro area handle pests with honest guidance, practical
-            treatments, and personal service.
+            {business.name} helps homeowners and businesses handle pests with
+            honest guidance, practical treatments, and personal service in
+            Arvada, Denver, the greater metro area, and nearby communities.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <ActionLink href="/pricing-estimator" variant="clay" size="lg">
