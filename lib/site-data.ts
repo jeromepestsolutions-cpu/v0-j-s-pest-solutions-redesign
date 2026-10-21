@@ -50,7 +50,7 @@ export const services: Service[] = [
     ],
     expect: [
       'A walkthrough and clear explanation of what we found',
-      'Treatment focused on prevention, not just knockdown',
+      'Treatment focused on solutions, not just knockdown',
       'Guidance on simple steps that help between visits',
     ],
     prep: [
