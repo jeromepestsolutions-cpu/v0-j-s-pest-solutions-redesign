@@ -105,6 +105,7 @@ export const services: Service[] = [
       'Severity and how established the activity is',
       'Number and difficulty of entry points',
       'Whether exclusion work is included',
+      'Location',
     ],
     faqs: [
       {
