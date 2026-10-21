@@ -277,6 +277,10 @@ export const serviceAreas: ServiceArea[] = [
   { name: 'Lakewood', blurb: 'Residential and commercial service in Lakewood.' },
   { name: 'Thornton', blurb: 'Coverage for Thornton and nearby communities.' },
   { name: 'Golden', blurb: 'Local service for Golden and the foothills edge.' },
+  { name: 'Littleton', blurb: 'Residential and commercial service in Littleton.' },
+  { name: 'Broomfield', blurb: 'Pest control throughout the Broomfield area.' },
+  { name: 'Boulder', blurb: 'Local service for Boulder homes and businesses.' },
+  { name: 'Aurora', blurb: 'Coverage for Aurora and nearby communities.' },
   {
     name: 'Surrounding Denver metro',
     blurb: 'Reach out and we will let you know if we cover your area.',
