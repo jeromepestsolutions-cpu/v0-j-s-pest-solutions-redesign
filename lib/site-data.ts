@@ -71,7 +71,7 @@ export const services: Service[] = [
       },
       {
         q: 'How often should I have service?',
-        a: 'Many Colorado homes do well with recurring seasonal visits, but we will recommend a schedule that fits your situation honestly.',
+        a: 'Many Colorado homes do well with recurring visits every other month, but we will recommend a schedule that fits your situation honestly.',
       },
     ],
   },
