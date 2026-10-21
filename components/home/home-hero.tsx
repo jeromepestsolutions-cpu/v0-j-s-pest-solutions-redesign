@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import { HeroSlideshow } from '@/components/home/hero-slideshow'
 import { Phone, Star } from 'lucide-react'
 import { business } from '@/lib/site-data'
 import { ActionLink } from '@/components/action-link'
@@ -68,14 +68,7 @@ export function HomeHero() {
 
         <div className="relative">
           <div className="overflow-hidden rounded-[1.75rem] border border-border shadow-lift">
-            <Image
-              src="/images/js-pest-family.jpg"
-              alt="The J's Pest Solutions family together"
-              width={1100}
-              height={1100}
-              priority
-              className="h-full w-full object-cover"
-            />
+            <HeroSlideshow />
           </div>
           <div
             className="absolute -bottom-4 -left-4 -z-10 h-28 w-28 rounded-[1.75rem] bg-accent"
