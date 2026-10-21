@@ -69,10 +69,10 @@ export function HomeHero() {
         <div className="relative">
           <div className="overflow-hidden rounded-[1.75rem] border border-border shadow-lift">
             <Image
-              src="/images/hero-technician-homeowner.png"
-              alt="A J's Pest Solutions technician talking with a homeowner outside a Colorado home"
-              width={900}
-              height={700}
+              src="/images/js-pest-family.jpg"
+              alt="The J's Pest Solutions family together"
+              width={1100}
+              height={1100}
               priority
               className="h-full w-full object-cover"
             />
