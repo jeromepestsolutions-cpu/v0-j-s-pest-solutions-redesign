@@ -22,7 +22,7 @@ export default function ServiceAreasPage() {
         subtitle="We are a family business serving our own neighbors. We keep our service area focused so we can stay responsive and group nearby appointments."
       >
         <div className="flex flex-col gap-3 sm:flex-row">
-          <ActionLink href="/pricing-estimator" size="lg">
+          <ActionLink href="/pricing-estimator" variant="orange" size="lg">
             Get a Price Estimate
           </ActionLink>
           <ActionLink href={business.phoneHref} variant="outline" size="lg">

@@ -23,7 +23,7 @@ export function CtaSection({
           {subtitle}
         </p>
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <ActionLink href="/pricing-estimator" variant="clay" size="lg">
+          <ActionLink href="/pricing-estimator" variant="orange" size="lg">
             Request an Estimate
           </ActionLink>
           <ActionLink href={business.phoneHref} variant="onDark" size="lg">

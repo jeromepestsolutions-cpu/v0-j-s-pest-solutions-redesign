@@ -78,7 +78,7 @@ export default function HomePage() {
                 and get a ballpark range.
               </p>
               <div className="mt-7">
-                <ActionLink href="/pricing-estimator" variant="clay" size="lg">
+                <ActionLink href="/pricing-estimator" variant="orange" size="lg">
                   Try the Pricing Estimator
                 </ActionLink>
               </div>

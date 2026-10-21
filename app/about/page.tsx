@@ -45,7 +45,7 @@ export default function AboutPage() {
         subtitle="J's Pest Solutions was built on a simple idea: honest pest control from people who actually live and work in your community."
       >
         <div className="flex flex-col gap-3 sm:flex-row">
-          <ActionLink href="/pricing-estimator" size="lg">
+          <ActionLink href="/pricing-estimator" variant="orange" size="lg">
             Get a Price Estimate
           </ActionLink>
           <ActionLink href={business.phoneHref} variant="outline" size="lg">

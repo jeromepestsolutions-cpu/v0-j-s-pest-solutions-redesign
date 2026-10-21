@@ -15,6 +15,8 @@ const variants = {
   clay: 'bg-clay text-clay-foreground shadow-soft hover:-translate-y-0.5 hover:shadow-lift hover:bg-clay/90',
   outline:
     'border border-primary/25 bg-transparent text-primary hover:border-primary/50 hover:bg-primary/5',
+  orange:
+    'bg-orange text-orange-foreground shadow-soft hover:-translate-y-0.5 hover:shadow-lift hover:bg-[#c2410c]',
   ink: 'bg-ink text-ink-foreground shadow-soft hover:-translate-y-0.5 hover:shadow-card hover:bg-ink/90',
   onDark:
     'border border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10',

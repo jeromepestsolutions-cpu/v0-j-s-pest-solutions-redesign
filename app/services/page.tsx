@@ -22,7 +22,7 @@ export default function ServicesPage() {
         subtitle="We focus on what actually keeps pests out — inspection, entry points, and treatments matched to the situation. Here is how we can help."
       >
         <div className="flex flex-col gap-3 sm:flex-row">
-          <ActionLink href="/pricing-estimator" size="lg">
+          <ActionLink href="/pricing-estimator" variant="orange" size="lg">
             Get a Price Estimate
           </ActionLink>
           <ActionLink href={business.phoneHref} variant="outline" size="lg">

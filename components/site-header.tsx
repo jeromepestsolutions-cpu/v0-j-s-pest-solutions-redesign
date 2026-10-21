@@ -58,7 +58,7 @@ export function SiteHeader() {
             <Phone className="size-4" />
             Call or Text
           </ActionLink>
-          <ActionLink href="/pricing-estimator" variant="clay">
+          <ActionLink href="/pricing-estimator" variant="orange">
             Request Estimate
           </ActionLink>
         </div>
@@ -92,7 +92,7 @@ export function SiteHeader() {
                 <Phone className="size-4" />
                 Call or Text {business.phone}
               </ActionLink>
-              <ActionLink href="/pricing-estimator" variant="clay" size="lg">
+              <ActionLink href="/pricing-estimator" variant="orange" size="lg">
                 Request an Estimate
               </ActionLink>
             </div>

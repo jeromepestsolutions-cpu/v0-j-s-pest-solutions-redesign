@@ -72,7 +72,7 @@ export default async function ServiceDetailPage({
     <>
       <PageHero eyebrow="Service" title={service.title} subtitle={service.short}>
         <div className="flex flex-col gap-3 sm:flex-row">
-          <ActionLink href="/pricing-estimator" size="lg">
+          <ActionLink href="/pricing-estimator" variant="orange" size="lg">
             Get a Price Estimate
           </ActionLink>
           <ActionLink href={business.phoneHref} variant="outline" size="lg">
@@ -140,7 +140,7 @@ export default async function ServiceDetailPage({
                   Tell us what you are seeing and we will give you honest guidance and a fair estimate.
                 </p>
                 <div className="mt-5 flex flex-col gap-3">
-                  <ActionLink href="/pricing-estimator">Get a Price Estimate</ActionLink>
+                  <ActionLink href="/pricing-estimator" variant="orange">Get a Price Estimate</ActionLink>
                   <ActionLink href={business.phoneHref} variant="outline">
                     <Phone className="size-5" />
                     Call or Text

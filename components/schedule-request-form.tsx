@@ -206,7 +206,7 @@ export function ScheduleRequestForm() {
 
         <button
           type="submit"
-          className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-primary px-6 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+          className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-orange px-6 text-base font-semibold text-orange-foreground transition-colors hover:bg-[#c2410c]"
         >
           <Send className="size-5" />
           Request a Service Window

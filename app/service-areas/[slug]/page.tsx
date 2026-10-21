@@ -50,7 +50,7 @@ export default async function AreaDetailPage({
         subtitle={area.intro}
       >
         <div className="flex flex-col gap-3 sm:flex-row">
-          <ActionLink href="/pricing-estimator" size="lg">
+          <ActionLink href="/pricing-estimator" variant="orange" size="lg">
             Get a Price Estimate
           </ActionLink>
           <ActionLink href={business.phoneHref} variant="outline" size="lg">
@@ -135,7 +135,7 @@ export default async function AreaDetailPage({
                   reach out.
                 </p>
                 <div className="mt-5 flex flex-col gap-3">
-                  <ActionLink href="/pricing-estimator">Get a Price Estimate</ActionLink>
+                  <ActionLink href="/pricing-estimator" variant="orange">Get a Price Estimate</ActionLink>
                   <ActionLink href={business.phoneHref} variant="outline">
                     <Phone className="size-5" />
                     Call or Text

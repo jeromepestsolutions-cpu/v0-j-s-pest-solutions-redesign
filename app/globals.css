@@ -42,6 +42,8 @@
   --color-background: var(--background);
   --color-clay: var(--clay);
   --color-clay-foreground: var(--clay-foreground);
+  --color-orange: var(--orange);
+  --color-orange-foreground: var(--orange-foreground);
   --color-sage: var(--sage);
   --color-sage-foreground: var(--sage-foreground);
   --color-ink: var(--ink);
@@ -85,6 +87,9 @@
   /* Bright mint CTA (logo "mint on navy" look) — reuses clay slot */
   --clay: oklch(0.82 0.082 184);
   --clay-foreground: oklch(0.24 0.045 245);
+  /* Orange call-to-action for estimate and request buttons */
+  --orange: #ea580c;
+  --orange-foreground: #ffffff;
   /* Powder-blue tint (logo house) */
   --sage: oklch(0.93 0.028 205);
   --sage-foreground: oklch(0.34 0.05 230);
@@ -129,6 +134,9 @@
   --ring: oklch(0.8 0.078 185);
   --clay: oklch(0.82 0.082 184);
   --clay-foreground: oklch(0.24 0.045 245);
+  /* Orange call-to-action for estimate and request buttons */
+  --orange: #ea580c;
+  --orange-foreground: #ffffff;
   --sage: oklch(0.33 0.03 235);
   --sage-foreground: oklch(0.95 0.01 200);
   --ink: oklch(0.2 0.03 248);

@@ -22,7 +22,7 @@ export function MobileCtaBar() {
         </a>
         <Link
           href="/pricing-estimator"
-          className="flex flex-col items-center justify-center gap-0.5 bg-clay py-2.5 text-xs font-semibold text-clay-foreground"
+          className="flex flex-col items-center justify-center gap-0.5 bg-orange py-2.5 text-xs font-semibold text-orange-foreground"
         >
           <ClipboardList className="size-5" />
           Estimate
