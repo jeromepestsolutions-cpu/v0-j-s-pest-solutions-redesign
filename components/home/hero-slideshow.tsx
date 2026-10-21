@@ -9,20 +9,68 @@ export type HeroSlide = {
   alt: string
 }
 
-// Add or remove photos here. Each photo is shown for a few seconds,
-// then fades into the next one.
+// Add or remove photos here. The first photo always shows first;
+// the rest are shuffled into a new order on every visit.
 export const heroSlides: HeroSlide[] = [
   {
-    src: '/images/hero-technician-homeowner.png',
-    alt: "A J's Pest Solutions technician talking with a homeowner outside a Colorado home",
+    src: '/images/hero-truck.jpg',
+    alt: "Jerome standing by the J's Pest Solutions truck outside a Colorado home",
+  },
+  {
+    src: '/images/hero-patio.jpg',
+    alt: "Two J's Pest Solutions technicians treating a restaurant patio",
+  },
+  {
+    src: '/images/hero-wasp-nest-1.jpg',
+    alt: 'A technician in a protective suit treating a ground wasp nest',
+  },
+  {
+    src: '/images/hero-team-selfie.jpg',
+    alt: "Jerome and a teammate in J's Pest Solutions gear",
+  },
+  {
+    src: '/images/hero-kitchen.jpg',
+    alt: 'Technicians checking rodent stations in a commercial kitchen',
+  },
+  {
+    src: '/images/hero-job-selfie.jpg',
+    alt: "The J's Pest Solutions crew at a home service visit",
+  },
+  {
+    src: '/images/hero-lamp-post.jpg',
+    alt: 'A technician treating the base of a parking lot light post',
+  },
+  {
+    src: '/images/hero-window-sweep.jpg',
+    alt: 'A technician clearing webs from upper windows of a home',
+  },
+  {
+    src: '/images/hero-wasp-nest-2.jpg',
+    alt: 'Treating a wasp nest along a garden border',
   },
 ]
 
+function shuffleAfterFirst<T>(items: T[]): T[] {
+  const [first, ...rest] = items
+  for (let i = rest.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[rest[i], rest[j]] = [rest[j], rest[i]]
+  }
+  return first ? [first, ...rest] : []
+}
+
 const SLIDE_SECONDS = 5
 
-export function HeroSlideshow({ slides = heroSlides }: { slides?: HeroSlide[] }) {
+export function HeroSlideshow({ slides: initialSlides = heroSlides }: { slides?: HeroSlide[] }) {
+  const [slides, setSlides] = useState(initialSlides)
   const [current, setCurrent] = useState(0)
   const [paused, setPaused] = useState(false)
+
+  // Mix up the order on each visit (after the page loads, so the
+  // server and browser agree on the first render).
+  useEffect(() => {
+    setSlides(shuffleAfterFirst(initialSlides))
+  }, [initialSlides])
 
   useEffect(() => {
     if (slides.length < 2 || paused) return
