@@ -10,10 +10,10 @@ export function HomeFamily() {
         <div className="relative">
           <div className="overflow-hidden rounded-[1.75rem] border border-border shadow-lift">
             <Image
-              src="/images/jerome-elizabeth.png"
-              alt="Jerome and Elizabeth, the family behind J's Pest Solutions"
-              width={800}
-              height={640}
+              src="/images/js-pest-family.jpg"
+              alt="The family behind J's Pest Solutions"
+              width={1100}
+              height={1100}
               className="h-full w-full object-cover"
             />
           </div>
