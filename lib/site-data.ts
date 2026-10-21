@@ -62,6 +62,7 @@ export const services: Service[] = [
       'Property size and layout',
       'Current activity level',
       'One-time visit vs. recurring protection',
+      'Location',
     ],
     faqs: [
       {
