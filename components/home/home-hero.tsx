@@ -40,7 +40,7 @@ export function HomeHero() {
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-pretty text-muted-foreground">
             {business.name} helps homeowners and businesses handle pests with
             honest guidance, practical treatments, and personal service in
-            Arvada, Denver, the greater metro area, and nearby communities.
+            Arvada, Denver, and the greater metro area.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <ActionLink href="/pricing-estimator" variant="clay" size="lg">
