@@ -82,7 +82,7 @@ export const services: Service[] = [
       'Rats and Mice look for warmth, food, and moisture, especially as Colorado temperatures drop. We help find how they are getting in.',
     icon: 'mouse',
     signs: [
-      'Droppings in cabinets, the garage, or along walls',
+      'Droppings or urine in cabinets, the garage, or along walls',
       'Scratching or scurrying sounds in walls or ceilings',
       'Gnaw marks on packaging, wires, or wood',
     ],
