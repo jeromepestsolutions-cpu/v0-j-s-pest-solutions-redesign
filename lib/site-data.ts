@@ -114,7 +114,7 @@ export const services: Service[] = [
       },
       {
         q: 'Do you seal up entry points?',
-        a: 'Exclusion is a big part of lasting rodent control. We will point out vulnerable areas and talk through the right approach.',
+        a: 'Exclusion is a big part of long-lasting rodent control. We will point out vulnerable areas and talk through the right approach.',
       },
     ],
   },
